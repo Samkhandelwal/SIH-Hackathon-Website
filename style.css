@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: Black;
+}
+
+/* Utility classes  */
+
+.btn{
+    background: linear-gradient(yellow , rgb(128, 209, 128));
+   padding: 1px 5px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    margin: auto;
+    /* border: 2px solid black; */
+}
+.btn:hover{
+    background: linear-gradient( rgb(128, 209, 128), yellow);
+    color: blue;
+}
+
+
+.tool-names{
+    background: linear-gradient(to right,  yellow , rgb(128, 209, 128));
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    height: 30px;
+    text-transform: capitalize;
+    
+}
+
+.tool-name{
+    font-size: 1.5rem;
+}
+.tool-container{
+    display: flex;
+    margin: 2rem 0rem;
+}
+
+.photo{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 500px;
+}
+
+/* Tool Names and changing with JavaScript */
+
+.tool-photo{
+    background: black url(farmer.jpeg) no-repeat center center/cover;
+}
+.shovel{
+    background: black url(shovel.jpeg) no-repeat center center/cover;
+}
+.tractor{
+    background: black url(tractor.jpeg) no-repeat center center/cover;
+}
+
+.gardening-fork{
+    background: black url(Gardening-fork.jpeg) no-repeat center center/cover;
+}
+
+.wheel-barrow{
+    background: black url(wheelbarrow.jpeg) no-repeat center center/cover;
+
+}
+
+.tool-description{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5rem 0rem;
+    
+}
+
+.heading-name{
+    margin-bottom: 1rem;
+    color: rgb(30, 207, 83);
+}
+
+/* weather */
+
+.input{
+    text-align: center;
+    margin: 100px auto;
+  }
+  
+  input[type="submit"]{
+    padding: 15px 30px;
+    background: #e7e7e7;
+    border: none;
+    border-radius: 1px;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+  }
+  
+  .input input[type="text"]{
+    width: 600px;
+    height: 55px;
+    padding: 5px 10px;
+    background: #e7e7e7;
+    border: none;
+    border-radius: 1px;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+  }
+  
+  .card{
+    width: 50%;
+    background: #e7e7e7;
+    height: 40vh;
+    margin: 50px auto;
+    border-radius: 2px;
+  }
+  
+  
+  .close{
+    float: right;
+    margin-top: -2px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .card h1{
+    padding: 5px 0;
+    text-align: center;
+  }
+  
+  .card p{
+    text-align: center;
+    margin:40px 0;
+    font-size:20px;
+  }
+  
+  .tool-name:first-child{
+      padding: 2rem;
+  }
+
+  .tool-name:last-child{
+      padding: 2rem;
+  }
