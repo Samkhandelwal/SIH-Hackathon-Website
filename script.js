@@ -3,7 +3,10 @@ const tractor = document.querySelector('.tool2')
 console.log(shovel);
 const gardeningFork = document.querySelector('.tool3');
 const wheelBarrow = document.querySelector('.tool4');
-console.log(wheelBarrow);
+
+const maize = document.querySelector('.tool6');
+const MP = document.querySelector('.tool-11');
+console.log(MP);
 
 const toolPhoto = document.querySelector('.tool-photo');
 const toolContent = document.querySelector('.tool-content')
@@ -54,6 +57,25 @@ wheelBarrow.addEventListener('click', function(wheelBarrow){
 
 });
 
+maize.addEventListener('click', function(maize){
+    console.log('hello sam');
+  maize.preventDefault();
+   toolPhoto.classList.toggle('maize');
+   headingName.textContent = 'Maize';
+
+   toolContent.textContent = ' Maize (Zea mays L.) is the world leading crop and is widely cultivated as cereal grain that was domesticated in Central America. It is one of the most versatile emerging crops having wider adaptability. Globally, maize is known as queen of cereals because of its highest genetic yield potential.'
+});
+
+MP.addEventListener('click', function(MP){
+    
+  MP.preventDefault();
+   toolPhoto.classList.toggle('mp');
+   headingName.textContent = 'Madhya Pradesh';
+
+   toolContent.textContent = 'Madhya Pradesh leads in the production of gram, linseed, green pea, garlic and coriander. The state is also a major producer of linseed, mustard, sunflower and safflower.'
+});
+
+
 readAloud.addEventListener('click',function (speak){
     let text = toolContent.textContent;
     console.log(text);
@@ -97,3 +119,14 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=5
 
 .catch(err => alert("Wrong city name!"));
 })
+
+
+//Map
+
+var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map-footer'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
